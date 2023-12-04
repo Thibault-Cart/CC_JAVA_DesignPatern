@@ -4,6 +4,7 @@ import domaine.Voyage;
 import domaine.VoyageFactory;
 import domaine.VoyageFactoryVo;
 import outils.InformerLesClients;
+import outils.Parametres;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,7 +19,7 @@ public class Bdd {
     public static List<Voyage> getListeDesVoyages() {
 
         // Fabrique de Voyage
-        VoyageFactory fabrique = new VoyageFactoryVo();
+        VoyageFactory fabrique = Parametres.getInstance().getVoyageFactory();
 
         List<Voyage> data = new ArrayList<>();
         try {

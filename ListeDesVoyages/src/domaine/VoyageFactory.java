@@ -6,5 +6,5 @@ public abstract class VoyageFactory {
         return null;
     }
 
-    ;
+
 }
